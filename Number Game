@@ -1,0 +1,27 @@
+import random
+
+print("------WELCOME TO NUMBER GAME--------")
+print("READ BELOW INSTRUCTIONS BEFORE ENTER INTO THE GAME:") 
+print("Guess A Number From 1 To 50")
+print("If You are Correct")
+print("Congrats You Are Winner")
+c=int(input("Press 1 To Start:"))
+if(c==1):
+    print("Lets Begin The Game")
+    x=random.randrange(1,50)
+    while(True):
+        m=int(input("Guess The Number From 1 To 50:"))
+        if(m>x):
+            print("NUMBER IS LESS THAN THIS NUMBER")
+        elif(m<x):
+            print("NUMBER IS GREATER THAN THIS NUMBER")
+        elif(m==x):
+            print("CORRECT !!!!")
+            print("<------YOU WON THE GAME-------->")
+            print("<----------THE END--------->")
+            break
+        else:
+            print("YOUR NUMBER IS OUT OF RANGE")
+
+else:
+  print("YOU ENTERED A WRONG KEY")
